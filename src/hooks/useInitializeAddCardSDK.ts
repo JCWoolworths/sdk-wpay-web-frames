@@ -41,21 +41,21 @@ const capture3DSCard = async (framesSDK: any, sessionId: string) => {
 
   // Add the event listeners for OnRender and OnClose for the 3DS challenge response
   elementHandle.addEventListener(
-    framesSDK.FramesCardinalEventType.OnRender,
+    frames.FramesCardinalEventType.OnRender,
     renderEventListener
   );
   elementHandle.addEventListener(
-    framesSDK.FramesCardinalEventType.OnClose,
+    frames.FramesCardinalEventType.OnClose,
     closeEventListener
   );
 
   // Remove the event listeners for OnRender and OnClose for the 3DS challenge response
   elementHandle.removeEventListener(
-    framesSDK.FramesCardinalEventType.OnRender,
+    frames.FramesCardinalEventType.OnRender,
     renderEventListener
   );
   elementHandle.removeEventListener(
-    framesSDK.FramesCardinalEventType.OnClose,
+    frames.FramesCardinalEventType.OnClose,
     closeEventListener
   );
 
@@ -89,7 +89,9 @@ const captureCard = (framesSDK, captureCardAction) => async () => {
         authorizationResponse
       );
     }
-  } catch (err: any) {}
+  } catch (err: any) {
+    console.error(err);
+  }
 };
 
 const errorMap: Map<string, string> = new Map([
