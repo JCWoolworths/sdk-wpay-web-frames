@@ -1,35 +1,28 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "lib": ["es2015", "dom"],
-        "strict": true,
-        "baseUrl": "./",
-        "outDir": "build",
-        "sourceMap": true,
-        "declaration": true,
-        "declarationDir": "./dist",
-        "resolveJsonModule": true,
-        "esModuleInterop": true,
-        "removeComments": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "importHelpers": true,
-        "typeRoots": ["./types", "./node_modules/@types"],
-        "types": ["reflect-metadata", "jest"],
-        "allowJs": true
-    },
-    "include": [
-        "./src/**/*.ts",
-        "./src/resources/songbird-staging.js",
-        "./src/resources/songbird-production.js"
-    ],
-    "exclude": [
-        "node_modules", 
-        "**/*.spec.ts", 
-        "**/*.test.ts"
-    ]
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "allowJs": true,
+    "baseUrl": "./",
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src", ".d.ts"]
 }
-  

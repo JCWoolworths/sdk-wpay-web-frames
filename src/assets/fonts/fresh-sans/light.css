@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Fresh-sans-light";
+  font-style: normal;
+  font-display: swap;
+  src: url("./FreshSans-Light.woff2") format("woff2"),
+    url("./FreshSans-Light.woff") format("woff");
+}

@@ -1,0 +1,55 @@
+{
+  "everydayPay": {
+    "creditCards": [
+      {
+        "allowed": true,
+        "cardName": "My Card",
+        "cardSuffix": "6106",
+        "cvvValidated": true,
+        "expired": false,
+        "expiryMonth": "05",
+        "expiryYear": "21",
+        "lastUpdated": "2017-11-06T19:38:09.890+11:00",
+        "lastUsed": "2017-11-06T19:38:09.890+11:00",
+        "createdOn": "2017-11-06T08:38:09.890Z",
+        "paymentInstrumentId": "90731",
+        "paymentToken": "712029a1-c0aa-41bc-a810-3d42424c5834",
+        "primary": true,
+        "requiresCVV": true,
+        "scheme": "MASTERCARD",
+        "status": "VERIFIED",
+        "stepUp": {
+          "mandatory": true,
+          "type": "CAPTURE_CVV",
+          "url": "https://uat.woolworthspay.com.au/container-ws/getCaptureFrame/cvvExpiry/353629ec-4cb5-4fc3-ab47-8c9c3f117ab8/90731"
+        },
+        "updateURL": "https://uat.woolworthspay.com.au/container-ws/getCaptureFrame/cvvExpiry/353629ec-4cb5-4fc3-ab47-8c9c3f117ab8/90731"
+      },
+      {
+        "allowed": true,
+        "cardName": "My Card",
+        "cardSuffix": "6345",
+        "cvvValidated": true,
+        "expired": false,
+        "expiryMonth": "05",
+        "expiryYear": "21",
+        "lastUpdated": "2017-11-06T19:38:09.890+11:00",
+        "lastUsed": "2017-11-06T19:38:09.890+11:00",
+        "createdOn": "2017-11-06T08:38:09.890Z",
+        "paymentInstrumentId": "22731",
+        "paymentToken": "712029a1-c0aa-41bc-a810-3d42424c5834",
+        "primary": false,
+        "requiresCVV": true,
+        "scheme": "VISA",
+        "status": "VERIFIED",
+        "stepUp": {
+          "mandatory": true,
+          "type": "CAPTURE_CVV",
+          "url": "https://uat.woolworthspay.com.au/container-ws/getCaptureFrame/cvvExpiry/353629ec-4cb5-4fc3-ab47-8c9c3f117ab8/90731"
+        },
+        "updateURL": "https://uat.woolworthspay.com.au/container-ws/getCaptureFrame/cvvExpiry/353629ec-4cb5-4fc3-ab47-8c9c3f117ab8/90731"
+      }
+    ],
+    "giftCards": []
+  }
+}
